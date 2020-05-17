@@ -57,4 +57,4 @@ if __name__ == "__main__":
         print("    annotator.py <image> [output.csv]")
     else:
         input_path, output_path = sys.argv[1], sys.argv[2] if len(sys.argv) == 3 else os.path.splitext(sys.argv[1])[0] + '.csv'
-        c.main("Annotator", app(input_path, output_path), 1280, 820)
+        c.main(app(input_path, output_path), "Annotator", 1280, 820)
